@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1</title>
+    <style>
+        .ht {
+            margin-bottom: 10px;
+        }
+        .check {
+            color: rgb(255, 77, 0);
+        }
+        h1 {
+            text-align: center; 
+            background-color: rgb(255, 77, 0);
+        }
+        input[type=text] {
+            border-style: inset;
+        }
+        label {
+            color: blue;
+        }
+        .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="/logincodegym.com" method="get" class="wufoo" >
+        <table style="margin-right: 30%;">
+            <tr>
+                <td colspan="5"><h1>SỞ THÍCH CỦA BẠN</h1></td>
+            </tr>
+            <tr>
+               <td><label for="hote">Họ và tên: </label></td> 
+               <td colspan="2"><input class="ht" type="text" name="hote" size="45"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td colspan="2"><input class="ht" type="text" name="email" size="35"></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><label for="  ">Sở thích: </label></td>
+                <td class="check"><input type="checkbox" name="cb">Thể thao</td>
+                <td class="check"><input type="checkbox" name="cb">Âm nhạc</td>
+                <td class="check"><input type="checkbox" name="cb">Đọc sách</td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox" name="cb">Lướt web</td>
+                <td class="check"><input type="checkbox" name="cb">Chơi game</td>
+                <td class="check"><input type="checkbox" name="cb">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox" name="cb">Du lịch</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="button" name="gt" value="Gửi thông tin"></td>
+                <td><input type="button" name="nl" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
