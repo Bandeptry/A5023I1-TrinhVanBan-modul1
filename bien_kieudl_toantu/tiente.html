@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="width: 70%; text-align: center;">
+        <tr>
+            <th>Amount</th>
+            <th>From currency</th>
+            <th>To currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="demo" placeholder="nhập số tiền"></td>
+            <td>
+                <select name="currency" id="fromcr">
+                    <option value="vietnam">Việt Nam</option>
+                    <option value="korea">Korea</option>
+                    <option value="japan">Japan</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="USD" id="from USD">
+                    <option value="USD">USD</option>
+                    <option value="vietnam">Việt Nam</option>
+                    <option value="korea">Korea</option>
+                    <option value="japan">Japan</option>
+                </select>
+            </td>
+            <td>
+                    <button onclick="doitien();" type="button" style="background-color: rgb(181, 7, 184);">Convert</button>
+            </td>
+            <script>
+                var vn, kr, jp, usd;
+                
+                function doitien(){
+                  vn =  document.getElementById('fromcr') + 23000;
+                  alert('vn');
+                }
+            </script>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hiển thị alert -->
+    <div id="demo1"></div>
+    <button type="button" onclick="clickMessign();">Click me 1</button>
+    <!--  hiển thị document.write() -->
+    <div id="demo2"></div>
+    <button type="button" onclick="clickin();">Click me 2</button>
+    <!-- hiển thị thẻ HTML -->
+    <div id="demo3"></div>
+    <button type="button" onclick="clickall();">click me 3</button>
+    <!-- hiển thị console.log  -->
+    <div id="demo4"></div>
+    <button type="button" onclick="clickfor();">click me 4</button>
+    <script>
+        function clickMessign(){
+        alert("bandeptry");
+    }
+        function clickin(){
+            document.write("chào em");
+        }
+        function clickall(){
+            document.getElementById("demo3").innerHTML="dep trai top 1 the gioi";
+        }
+        function clickfor(){
+            console.log("thế giới có 8 tỉ người");
+        }
+    </script>
+</body>
+</html>
