@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="nhập giá trị 1" id="gtri1">
+        <input type="text" placeholder="nhập giá trị 2" id="gtri2"><br>
+        <div style="margin-top: 10px;">
+            <button id="tong" onclick="Addition();">Addition(+)</button>
+            <button id="hieu" onclick="Subtraction()">Subtraction(-)</button>
+            <button id="tich" onclick="Miltiplication()">Miltiplication(x)</button>
+            <button id="thuong" onclick="Division()">Division(/)</button>
+        </div>
+        <script>
+            function Addition(){
+                var x = document.getElementById('gtri1').value;
+                var y = document.getElementById('gtri2').value;
+                var cong = parseFloat(x) + parseFloat(y);
+                alert(cong);
+            }
+            function Subtraction(){
+                var x = document.getElementById('gtri1').value;
+                var y = document.getElementById('gtri2').value;
+                var tru = parseFloat(x) - parseFloat(y);
+                alert(tru);
+            }
+            function Miltiplication(){
+                var x = document.getElementById('gtri1').value;
+                var y = document.getElementById('gtri2').value;
+                var nhan = parseFloat(x) * parseFloat(y);
+                alert(nhan);
+            }
+            function Division(){
+                var x = document.getElementById('gtri1').value;
+                var y = document.getElementById('gtri2').value;
+                var chia = parseFloat(x) / parseFloat(y);
+                alert(chia);
+            }
+
+        </script>
+    </form>
+</body>
+</html>

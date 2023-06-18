@@ -19,30 +19,62 @@
                 <select name="currency" id="fromcr">
                     <option value="vietnam">Việt Nam</option>
                     <option value="korea">Korea</option>
-                    <option value="japan">Japan</option>
                     <option value="USD">USD</option>
                 </select>
             </td>
             <td>
-                <select name="USD" id="from USD">
+                <select name="USD" id="tocr">
                     <option value="USD">USD</option>
                     <option value="vietnam">Việt Nam</option>
                     <option value="korea">Korea</option>
-                    <option value="japan">Japan</option>
                 </select>
             </td>
             <td>
-                    <button onclick="doitien();" type="button" style="background-color: rgb(181, 7, 184);">Convert</button>
+                    <button onclick="doitien();"; type="button"; style="background-color: rgb(181, 7, 184);">Convert</button>
             </td>
             <script>
-                var vn, kr, jp, usd;
+                let vn, kr, USD;
                 
                 function doitien(){
-                  vn =  document.getElementById('fromcr') + 23000;
-                  alert('vn');
+                let money =  document.getElementById('demo').value;
+                let from =  document.getElementById('fromcr').value;               
+                let to =  document.getElementById('tocr').value;               
+                if(from =='USD'){
+                    if(to == 'vietnam'){
+                        vn = money * 23530;
+                        alert(vn + 'vnđ'); 
+                    }else if(to == 'korea'){
+                        kr = money * 1.4;
+                        alert(kr +'₩');                      
+                    }else{
+                        alert('Vui lòng chọn đổi tiền ngoài tiền USD');
+                }  
+            }                
+                if(from=='vietnam'){
+                    if(to == 'USD'){
+                        USD = money * 1/23530;
+                        alert(USD +' $');
+                    }else if(to == 'korea'){
+                        kr = money * 18;
+                        alert(kr + '₩');
+                    }else{
+                        alert('Vui lòng chọn đổi tiền ngoài tiền việt nam');
+                    }
                 }
+                if(from == 'korea'){
+                    if(to == 'USD'){
+                        USD = money * 5/7;
+                        alert(USD +'$');
+                    }else if(to =='vietnam'){
+                        vn = money * 1/18;
+                        alert(vn +'vnđ');
+                    }else{
+                        alert('Vui lòng chọn đổi tiền ngoài tiền korea');
+                } 
+            }
+        }
             </script>
         </tr>
     </table>
 </body>
-</html>
+</html>   
