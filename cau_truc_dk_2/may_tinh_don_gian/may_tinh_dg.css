@@ -1,0 +1,19 @@
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-color: gray;
+    width: 250px;
+    height: 250px;
+}
+td{
+    border: none;
+}
+button{
+    width: 50px;
+    height: 30px;
+    border-color: gray;
+    background-color: rgb(17, 146, 232);
+    color: crimson;
+    
+}

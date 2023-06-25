@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo1" placeholder="nhập a">
+    <input type="text" id="demo2" placeholder="nhập b">
+    <input type="button" onclick="result();" value="result">
+    <script>
+        function result (){
+            a = parseInt(document.getElementById('demo1').value);
+            b = parseInt(document.getElementById('demo2').value);
+            var age = a > b ? a:b;
+            alert(age);
+        }
+    </script>
+</body>
+</html>

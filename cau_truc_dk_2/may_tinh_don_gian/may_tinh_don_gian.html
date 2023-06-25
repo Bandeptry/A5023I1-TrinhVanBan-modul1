@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale='1'.0">
+    <title>Máy tính đơn giản</title>
+    <link rel="stylesheet" href="may_tinh_dg.css">
+</head>
+<body>
+    <table border="1"  cellspacing="0" cellpadding="5">
+        <tr>
+            <th colspan="4"><input type="text" id="tinh" style="height: 30px; width: 200px;"></th>
+        </tr>
+        <tr>
+                <td><button onclick="Basic('1')">1</button></td>
+                <td><button onclick="Basic('2')">2</button></td>
+                <td><button onclick="Basic('3')">3</button></td>
+                <td><button onclick="Basic('+')">+</button></td>
+        <tr>
+            
+                <td><button onclick="Basic('4')">4</button></td>
+                <td><button onclick="Basic('5')">5</button></td>
+                <td><button onclick="Basic('6')">6</button></td>
+                <td><button onclick="Basic('-')">-</button></td>
+            
+        </tr>
+            <tr>
+            
+                <td><button onclick="Basic('7')">7</button></td>
+                <td><button onclick="Basic('7')">7</button></td>
+                <td><button onclick="Basic('9')">9</button></td>
+                <td><button onclick="Basic('*')">X</button></td>
+    
+            </tr>
+            <tr>
+                <td><button onclick="Erase('c')">C</button></td>
+                <td><button onclick="Basic('0')">0</button></td>
+                <td><button onclick="Result('=')">=</button></td>
+                <td><button onclick="Basic('/')">/</button></td>           
+            </tr>
+    </table>
+    <script src="may_tinh_dg.js">
+    </script>
+</body>
+</html>

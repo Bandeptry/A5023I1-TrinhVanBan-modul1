@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <img id= "demo"src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Football_PNG52750.png" alt="quabong">
+        <p>click button below to move the image to right</p>
+        <input type="button" onclick="moveRigth();" value="click me" style="width: 300px">
+    </form>
+    <script>
+        var img = null;
+        
+        function int(){
+            img = document.getElementById('demo');
+            img.style.position= 'relative';
+            img.style.left = '0px'
+        }
+        function moveRigth(){
+            img.style.left = parseInt(img.style.left) + 100+'px';
+        }
+        window.onload = int;
+
+    </script>
+</body>
+</html>
