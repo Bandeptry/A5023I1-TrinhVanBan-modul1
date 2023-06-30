@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Tính giai thừa của một số nguyên dương</p>
+    <script>
+        let n = +prompt('Nhập n!');
+        let multiply = 1;
+            if(n == 0 || n == 1 ){
+                document.write(n+'! = '+multiply);
+            }else{
+                for(let i = 1; i <= n; i++){
+                    multiply *= i;
+            }
+            document.write(n+'! = '+multiply);
+        }
+    </script>
+</body>
+</html>
