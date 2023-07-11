@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dem = 0;
+        let array = [0, 2, -3, -8, 6, -5, 9, 15, 20, -7];
+        for(let i = 0; i < array.length; i++){
+            if(array[i] < 0){
+                a = document.write('Số âm trong mảng thuộc index ' + i + ' có phần tử âm là: ' +array[i] + '</br>');
+                dem++;
+            }
+        }
+        document.write('Số lượng số nguyên âm trong mảng là: '+ dem);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = prompt('Nhập một mảng số nguyên:');
+        let string = array.toString();
+        let max = 0;
+        let sum = 0;
+        //let index = array.length-1;// kiểm tra vị trí của các phần tử
+        for( let i = 0; i < string.length; i++){
+            sum = sum + parseInt(string[i]); 
+            if(string[i] > max){
+                max = string[i];          
+            }
+        } 
+        let average = sum / string.length;
+        document.write('Giá trị lớn nhất trong mảng là: '+ max +'<br>');
+        document.write('Tổng giá trị trong mảng là: '+ sum +'</br>');
+        document.write('Giá trị trung bình trong mảng là: '+ average +'</br>');
+       
+    </script>
+</body>
+</html>

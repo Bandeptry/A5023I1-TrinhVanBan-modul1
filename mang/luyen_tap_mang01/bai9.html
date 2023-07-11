@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberA = [1, 2, 3, 4, 5];
+        let numberB = [6, 7, 8, 9, 10];
+        let noiB = numberB.concat(numberA);
+        let array = new Array(20)
+        for(let i = 0; i < array.length; i++){
+            array[i] = +prompt('Khai báo mảng gồm 20 phần tử số nguyên vị trí thứ '+ i +' là');
+        }
+        let numberC = array;
+        document.write('Mảng c' +numberC+'</br>');
+        let noiC = numberC.concat(noiB);
+        document.write('Mảng a và b được nối từ c được cập nhật: '+noiC+'</br>')
+    </script>
+</body>
+</html>

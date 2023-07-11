@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = prompt('Nhập mảng số nguyên');
+        let string = array.toString();
+        let view = [];;
+        document.write('Mảng bạn vừa nhập là: '+ string);
+        for(let i = string.length; i >= 0; i--){
+            view.push(string[i]);
+        }
+        document.write('Mảng vừa đảo là: '+ view.join(' '));
+
+        
+
+    </script>
+</body>
+</html>

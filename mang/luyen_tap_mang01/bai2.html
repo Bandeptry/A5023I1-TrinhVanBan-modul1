@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [33, 14, 25, 18, 14, 0, 25, 10, 532004, 20];
+        let max = 0;
+        let index = numbers.length-1;
+        for( let i = 0; i < numbers.length; i++){
+            if(numbers[i] > max){
+                max = numbers[i];
+            }
+        }
+        document.write('Phần tử có giá trị lớn nhất trong mảng là' + max + 'có vị trí' + index);
+    </script>
+</body>
+</html>

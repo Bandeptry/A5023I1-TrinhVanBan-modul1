@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let array = ['code'];
+    //     array.push('xeTo');
+    //     document.write(array);
+    //     document.write('</br>');
+
+    //     let doiTuong = [];
+    //     let ary = {
+    //         id: 12345,
+    //         name: 'trinhvanban',
+    //         email: 'trinhvanban5302004'
+    // }
+    //     doiTuong.push(ary);
+    //     console.log(doiTuong);
+    //     //hàm splice
+    //     let a = ['code', 'gym', 'danang','dangcap', 'vippro'];
+    //     a.splice(0,3);
+    //     console.log(a);
+        // let b = [
+        //     {
+        //     id:1,
+        //     name: 'ban',
+        //     sdt: 0948148135
+        //     },
+        //     {
+        //     id:2,
+        //     name: 'bancute',
+        //     sdt: 0948148135
+        //     },
+        //     {
+        //     id:3,
+        //     name: 'bandeptrai',
+        //     sdt: 0948148135
+        //     }
+        // ]
+        // for(i = 0; i < b.length; i++){//i là vị trí chỉ số index
+        //     if(b[i].name == 'ban'){
+        //         b.splice(i,1);
+                
+        //     }
+        //     console.log(b[i]);  
+        // } 
+        //hàm concat để nối mảng a với mảng b
+        // let b = [
+        //     {
+        //     id:1,
+        //     name: 'ban',
+        //     sdt: 0948148135
+        //     },
+        //     {
+        //     id:2,
+        //     name: 'bancute',
+        //     sdt: 0948148135
+        //     },
+        //     {
+        //     id:3,
+        //     name: 'bandeptrai',
+        //     sdt: 0948148135
+        //     }
+        // ]
+        // let a = [
+        // {
+        //     id:3,
+        //     name: 'bantrai',
+        //     sdt: 0948148135 
+        // }
+        // ]
+        // let c = b.concat(a);
+                
+            
+        //     console.log(c);  
+        //hàm index dùng để xem vị trí trong chuổi và phần tử
+        // let aray = "bandeptrainhatnha";
+        // let index = aray.indexOf('a');
+        // console.log(index);
+        // let a = [1,2,3,4,5,6,7];
+        // let b = a.indexOf(7);
+        // console.log(b);
+        //hàm map dùng thay đổi giá trị
+            let nature =[
+                {
+                    id: 1,
+                    name: 'so1VietNam',
+                    sdt: 0123456734
+                },
+                {
+                    id: 2,
+                    name: 'so1VietNam2',
+                    sdt: 01234567345
+                },
+                {
+                    id: 3,
+                    name: 'so1VietNam3',
+                    sdt: 01234567346
+                }
+            ]
+                let newNature = nature.map(function (animal)
+                {
+                    if(animal.id == 1){
+                        animal.name = "top1TheGioi"
+                    }
+                    return animal;
+                }
+                )
+                console.log(newNature);
+
+                
+    </script>
+</body>
+</html>
