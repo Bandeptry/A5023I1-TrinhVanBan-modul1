@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function daoNguoc(){
+            let array = [a, b, c];
+            let dao = array.reverse();
+            return dao;
+        }
+        let a = +prompt('Nhập vào mảng số nguyên bất kì thứ 1');
+        let b = +prompt('Nhập vào mảng số nguyên bất kì thứ 2');
+        let c = +prompt('Nhập vào mảng số nguyên bất kì thứ 3');
+        let mangGoc = document.write('Mảng gốc là: '+a+', '+ b+', '+ c +'<br>');
+        let goiHam = daoNguoc(a, b, c);
+        document.write(goiHam);
+    </script>
+</body>
+</html>

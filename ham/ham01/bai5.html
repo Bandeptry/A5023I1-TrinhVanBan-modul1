@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ngoiSao = [ 'Polaris', 'Aldebaran', 'Deneb',' Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let chomSao = ['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo'];
+        function myFunction() {
+            let goi = prompt('Nhập chòm sao để xem thuộc sao nào');
+            for (let i = 0; i < chomSao.length; i++) {
+                if (goi == chomSao[i]) {
+                    document.write('Vị trí bạn vừa nhập của chòm sao trong mảng thuộc vị trí thứ: ' + i + '<br>');
+                    let thuoc = ngoiSao[i];
+                    document.write('Chòm sao này thuộc sao: ' + thuoc+'<br>');
+                    return true;
+                }
+            }
+            document.write('Tên vị trí bạn vừa nhập không thuộc trong chòm sao <br>');
+            return false;
+        }
+        let thuHien = myFunction();
+        if (thuHien) {
+            document.write('Hàm myFunction đã trả về true');
+        } else {
+            document.write('Hàm myFunction đã trả về false');
+        }
+    </script>
+</body>
+</html>

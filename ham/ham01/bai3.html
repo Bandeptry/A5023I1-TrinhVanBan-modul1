@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nhập a" id="text1">
+    <input type="text" placeholder="Nhập b" id="text2">
+   <input type="button" onclick="myFunction()" value="click me">
+    <p>Result:<span id="result"></span></p>
+    <script>
+        function myFunction(){
+        let a = parseInt(document.getElementById('text1').value);
+        let b = parseInt(document.getElementById('text2').value);
+            if( a > b){
+                alert('a lớn hơn b');
+            }else{
+                let x = a + b;
+                document.getElementById('result').innerHTML=x;
+            }
+        }
+    </script>
+</body>
+</html>
