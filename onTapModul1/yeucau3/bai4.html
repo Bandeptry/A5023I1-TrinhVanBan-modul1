@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printMenu() {
+  console.log("Menu thức uống:");
+  console.log("1. Cafe");
+  console.log("2. Cam vắt");
+  console.log("3. Nước ép cà rốt");
+  console.log("4. Nước ép cà chua");
+  console.log("5. Nước lọc");
+  console.log("6. Nước dừa");
+  console.log("7. Thoát gọi món");
+}
+
+function calculateTotal(price, quantity) {
+  return price * quantity;
+}
+
+function main() {
+  const menu = {
+    1: { name: "Cafe", price: 30000 },
+    2: { name: "Cam vắt", price: 25000 },
+    3: { name: "Nước ép cà rốt", price: 20000 },
+    4: { name: "Nước ép cà chua", price: 22000 },
+    5: { name: "Nước lọc", price: 10000 },
+    6: { name: "Nước dừa", price: 15000 },
+  };
+
+  let totalCost = 0;
+
+  while (true) {
+    printMenu();
+    const choice = parseInt(prompt("Nhập số thức uống bạn muốn chọn (1-7):"));
+
+    if (choice === 7) {
+      break;
+    }
+
+    if (!(choice in menu)) {
+      console.log("Số thức uống không hợp lệ. Vui lòng chọn lại.");
+      continue;
+    }
+
+    let quantity = parseInt(prompt("Nhập số lượng:"));
+
+    if (quantity <= 0) {
+      console.log("Số lượng không hợp lệ. Vui lòng nhập lại.");
+      continue;
+    }
+
+    const drink = menu[choice];
+    const drinkName = drink.name;
+    const drinkPrice = drink.price;
+
+    totalCost += calculateTotal(drinkPrice, quantity);
+    console.log(`Đã thêm ${quantity} ${drinkName} vào đơn hàng. Tổng tiền hiện tại: ${totalCost} VND`);
+  }
+
+  console.log(`Tổng số tiền cần thanh toán: ${totalCost} VND`);
+  console.log("Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!");
+}
+
+main();
+
+    </script>
+</body>
+</html>

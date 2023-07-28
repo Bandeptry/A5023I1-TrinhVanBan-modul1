@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="hinhChuNhat();" value="Hình chữ nhật"><br><br>
+    <canvas id="myCanvas" height="50" width="200" style="background: rebeccapurple;";></canvas>
+    <script>
+    function hinhChuNhat(){
+        let x = +prompt('Nhập chiều dài:');
+        let y = +prompt('Nhập chiều rộng:');
+        let  Rectangle = function(chieuDai, chieuRong){
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        this.getchieuDai = function(){
+            return this.chieuDai;
+        };
+        this.getchieuRong = function(){
+            return this.chieuRong;
+        }
+        this.getDienTich = function(){
+            return this.chieuDai * this.chieuRong;
+        };
+        this.getChuVi = function(){
+            return (this.chieuDai + this.chieuRong) * 2;
+        };
+        };
+        let rectangle = new Rectangle(x, y);
+        let dai = rectangle.getchieuDai();
+        let rong = rectangle.getchieuRong();
+        let S = rectangle.getDienTich();
+        let C = rectangle.getChuVi();
+        alert('- Diện tích của hình chữ nhật là: '+ S +'\n'+'- Chu vi của hình chữ nhật là: '+ C);
+
+        let value = document.getElementById('myCanvas');
+        let prinf1 = ('Chiều dài: ' + dai + ', Chiều rộng: ' + rong);
+        let ctx = value.getContext('2d');
+        };
+        </script>
+</body>
+</html>

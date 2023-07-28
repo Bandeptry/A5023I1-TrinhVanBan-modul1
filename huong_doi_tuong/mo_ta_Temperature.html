@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createTemperature(celsius) {
+  if (celsius < -273) {
+    throw new Error('Temperature cannot be below -273 degrees Celsius.');
+  }
+
+  // Function to convert Celsius to Fahrenheit
+  function convertToFahrenheit() {
+    return (celsius * 9/5) + 32;
+  }
+
+  // Function to convert Celsius to Kelvin
+  function convertToKelvin() {
+    return celsius + 273.15;
+  }
+
+  // Public methods exposed as properties of the object
+  return {
+    convertToFahrenheit,
+    convertToKelvin
+  };
+}
+
+// Example usage:
+try {
+  // Create a Temperature object with Celsius value 25
+  const temperature = createTemperature(25);
+
+  // Display the temperature in Fahrenheit and Kelvin
+  console.log(`Temperature in Fahrenheit: ${temperature.convertToFahrenheit()} °F`);
+  console.log(`Temperature in Kelvin: ${temperature.convertToKelvin()} K`);
+} catch (error) {
+  console.error(error.message);
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function value(a, b){
+            let index = 0;
+            let maxValue = a[0] / b[0];
+            for(let i = 0; i < a.length; i++){
+                let seachMax = a[i] / b[i];
+                if(seachMax > maxValue){
+                    let index = i;
+                    maxValue = seachMax;
+                }
+            }
+            document.write('Phân số lớn nhất là: '+maxValue);
+            return index;
+        }
+        let numerators = [5, 2, 5];
+        let denominators = [6, 3, 4];
+        let result = value(numerators, denominators);
+        document.write(' có chỉ số ' +result);
+    </script>
+</body>
+</html>

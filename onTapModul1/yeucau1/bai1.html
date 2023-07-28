@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tienLuong = +prompt('Nhập số lương nhân viên tháng này để tính thuế:');
+        if(tienLuong > 0){
+            if(tienLuong >= 15000000){
+                let thue = tienLuong * 0.2;
+                let luong = tienLuong - thue;
+                document.write('Thuế tháng này là: '+ thue +'<br>');
+                document.write('Lương của tháng này là: '+ luong);
+            }else if(tienLuong >= 7000000){
+                let thue = tienLuong * 0.1;
+                let luong = tienLuong - thue;
+                document.write('Thuế tháng này là: '+ thue+'<br>');
+                document.write('Lương của tháng này là: '+ luong);
+            }else{
+                let thue = tienLuong * 0.05;
+                let luong = tienLuong - thue;
+                document.write('Thuế tháng này là: '+ thue+'<br>');
+                document.write('Lương của tháng này là: '+ luong);
+            }
+        }else{
+            alert('Bạn nhập sai rồi');
+        }
+    </script>
+</body>
+</html>
